@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Admin DashBoard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/css/login.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top:100px">
+            <div class="col-md-offset-3">
+                    <form action="/dashboard" method="post">
+                        <div class="form-group">
+                            <label for="group">Group Name:</label>                            
+                            <input type="text" class="form-control" name="group" id="group" placeholder="Enter Group Name">
+                        </div>
+                        <div class="form-group">
+                                <label for="country">Country Name:</label>
+                                <input type="text" name="country" id="country" class="form-control" placeholder="Enter Country Name">
+                        </div>
+                        <div class="form-group">
+                                <label for="country"Upload File:</label>                         
+                                
+                                <input type="file" name="upload" id="upload-input"  class="form-control">
+                                <button class="btn btn-lg btn-primary upload-btn" type="button" style="margin-top:10px">Upload File</button>
+                        </div>
+                    </form>
+            </div>
+            <div class="col-md-6"></div>
+        </div>       
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/upload.js"></script>
+</body>
+
+</html>
